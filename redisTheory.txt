@@ -1,14 +1,17 @@
 Unlike other key-value stores where both key and value are of string type, redis supports more data type/structures. 
 what are other key value stores?
 
-Which other data types does redis support? 
+Which other data types does Redis support? 
 
-Binary-safe strings: 
-Lists: basically linked lists.
-Sets: collections of unique, unsorted string elements.
-Sorted sets: Each string has a floating point score. Strings are sorted by this score. Useful to get range of values like top 10 or bottom 10.
-Hashes: similar to Ruby or Python hashes.
-Bit arrays: I haven't understood those yet
-HyperLogLogs: I haven't understood those yet.
+1.	Binary-safe strings: Any string of characters which 
+2.	Lists: basically linked lists.
+3.	Sets: collections of unique, unsorted string elements.
+4.	Sorted sets: Each string has a floating point score. Strings are sorted by this score. Useful to get range of values like top 10 or bottom 10.
+5.	Hashes: similar to Ruby or Python hashes.
+6.	Bit arrays: I haven't understood those yet
+7.	HyperLogLogs: I haven't understood those yet.
 
-
+Redis keys: 
+Redis keys are binary safe; it means you can use any binary sequence as a key. It can be as crazy as contents of jpeg file to as simple as empty string. 
+1.	Maximum key size is 512 MB.
+2.	Even though it’s possible to have key of this big size. But having a very big key has overhead too because if the key size is really big then while retrieving the data we need to compare those many bits to get the exact record. Same is true for small keys too. So, basically have keys which are long enough to be meaningful and small enough to make the comparison easier. Balancing these 2 factors is the key while choosing the key. 
