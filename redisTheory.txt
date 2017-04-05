@@ -1,0 +1,13 @@
+Unlike other key-value stores where both key and value are of string type, redis supports more data type/structures. 
+what are other key value stores?
+
+Which other data types does redis support? 
+
+Binary-safe strings: 
+Lists: basically linked lists.
+Sets: collections of unique, unsorted string elements.
+Sorted sets: Each string has a floating point score. Strings are sorted by this score. Useful to get range of values.
+
+Hashes, which are maps composed of fields associated with values. Both the field and the value are strings. This is very similar to Ruby or Python hashes.
+Bit arrays (or simply bitmaps): it is possible, using special commands, to handle String values like an array of bits: you can set and clear individual bits, count all the bits set to 1, find the first set or unset bit, and so forth.
+HyperLogLogs: this is a probabilistic data structure which is used in order to estimate the cardinality of a set. Don't be scared, it is simpler than it seems... See later in the HyperLogLog section of this tutorial.
