@@ -7,8 +7,8 @@ Binary-safe strings:
 Lists: basically linked lists.
 Sets: collections of unique, unsorted string elements.
 Sorted sets: Each string has a floating point score. Strings are sorted by this score. Useful to get range of values like top 10 or bottom 10.
-
 Hashes: similar to Ruby or Python hashes.
 Bit arrays: I haven't understood those yet
 HyperLogLogs: I haven't understood those yet.
+
 
